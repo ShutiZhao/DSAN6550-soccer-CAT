@@ -1,0 +1,31 @@
+ItemID,Question,OptionA,OptionB,OptionC,OptionD,CorrectAnswer,Difficulty,Category,a,b
+Q1,How many players from one team are on the field at the start of a regulation soccer match?,9,10,11,12,C,Easy,rules,1.878,-1.9631
+Q2,How long is a regulation soccer match (excluding stoppage and extra time)?,60 minutes,80 minutes,90 minutes,120 minutes,C,Easy,rules,2.5668,-1.8025
+Q3,Which country has won the most FIFA World Cup titles (men)?,Germany,Italy,Argentina,Brazil,D,Easy,history,1.6565,-2.0095
+Q4,How often is the FIFA World Cup held?,Every 2 years,Every 3 years,Every 4 years,Every 5 years,C,Easy,basics,0.9569,-1.801
+Q5,In which country was the 2022 FIFA World Cup hosted?,Russia,Qatar,United Arab Emirates,Saudi Arabia,B,Easy,history,1.2528,-1.4307
+Q6,Which player is commonly known by the nickname 'CR7'?,Lionel Messi,Cristiano Ronaldo,Neymar,Kylian Mbappe,B,Easy,players,1.6504,-1.4669
+Q7,What does a red card mean in a soccer match?,A formal warning,A goal is scored,The player is sent off,An offside call,C,Easy,rules,1.8455,-1.1754
+Q8,How many teams played in the final tournament of the 2022 FIFA World Cup?,16,24,32,48,C,Easy,format,1.2248,-0.7692
+Q9,Who scored the famous 'Hand of God' goal at the 1986 World Cup?,Pele,Diego Maradona,Zinedine Zidane,Johan Cruyff,B,Easy,history,1.9417,-0.831
+Q10,Which governing body organizes the FIFA World Cup?,UEFA,FIFA,CONMEBOL,IOC,B,Easy,basics,1.0812,-0.9449
+Q11,Who won the Golden Ball (best player) at the 2022 FIFA World Cup?,Kylian Mbappe,Lionel Messi,Luka Modric,Antoine Griezmann,B,Medium,history,1.8312,-0.3171
+Q12,Which country hosted the first FIFA World Cup in 1930?,Brazil,Italy,Uruguay,France,C,Medium,history,1.512,-0.2552
+Q13,"As of 2024, which player has won the most Ballon d'Or awards?",Cristiano Ronaldo,Lionel Messi,Michel Platini,Johan Cruyff,B,Medium,records,1.6656,-0.2089
+Q14,"Which African nation reached the semifinals of the 2022 World Cup, a first for the continent?",Senegal,Morocco,Cameroon,Ghana,B,Medium,history,1.1331,-0.1588
+Q15,Which European country won UEFA Euro 2020 (played in 2021)?,England,France,Italy,Portugal,C,Medium,history,1.1529,-0.0143
+Q16,Who is the all-time leading goalscorer for the Germany men's national team?,Gerd Muller,Miroslav Klose,Thomas Muller,Jurgen Klinsmann,B,Medium,players,1.3167,0.0595
+Q17,The 7-1 defeat in a 2014 World Cup semifinal was suffered by which host nation?,South Africa,Brazil,Russia,Qatar,B,Medium,history,1.1777,0.3229
+Q18,In which year did goal-line technology debut at a FIFA World Cup?,2010,2014,2018,2022,B,Medium,history,1.6987,0.285
+Q19,Pele won his first World Cup with Brazil at age 17. In which year?,1954,1958,1962,1970,B,Medium,history,1.147,0.3651
+Q20,Who won the Golden Glove (best goalkeeper) at the 2022 World Cup?,Hugo Lloris,Thibaut Courtois,Emiliano Martinez,Yassine Bounou,C,Medium,history,1.0644,0.4029
+Q21,Who won the Golden Boot at the 1978 FIFA World Cup?,Mario Kempes,Paolo Rossi,Teofilo Cubillas,Rob Rensenbrink,A,Hard,history,1.1553,0.5954
+Q22,Which player holds the record for most goals scored in a single World Cup tournament?,Gerd Muller,Just Fontaine,Pele,Ronaldo (Brazil),B,Hard,records,2.2133,0.8851
+Q23,Lev Yashin remains the only player at his position ever to win the Ballon d'Or. What position did he play?,Striker,Midfielder,Defender,Goalkeeper,D,Hard,players,0.9865,1.1635
+Q24,Hakan Sukur scored the fastest goal in World Cup history (2002). At how many seconds?,11 seconds,17 seconds,23 seconds,30 seconds,A,Hard,records,1.3871,1.1435
+Q25,Who is the all-time top scorer in men's FIFA World Cup finals (across all editions)?,Ronaldo (Brazil),Gerd Muller,Miroslav Klose,Just Fontaine,C,Hard,records,1.3845,1.1237
+Q26,"Which African team was the first from CAF to reach a World Cup quarterfinal, in 1990?",Nigeria,Senegal,Ghana,Cameroon,D,Hard,history,1.7902,1.4154
+Q27,The 1950 World Cup did not have a traditional knockout final. How was the champion decided?,Coin toss,Final round-robin group,Continuous tournament,FIFA committee vote,B,Hard,history,1.2951,1.431
+Q28,"Who scored the winning goal in the 1986 World Cup final, sealing Argentina's title?",Diego Maradona,Jorge Burruchaga,Jorge Valdano,Sergio Batista,B,Hard,history,0.9695,1.3652
+Q29,"As of the 2022 tournament, which player has appeared in the most men's FIFA World Cup matches?",Cristiano Ronaldo,Lionel Messi,Lothar Matthaus,Paolo Maldini,B,Hard,records,1.309,1.849
+Q30,In which year did the men's FIFA World Cup expand to 32 teams in the final tournament?,1982,1994,1998,2002,C,Hard,format,0.927,2.3721

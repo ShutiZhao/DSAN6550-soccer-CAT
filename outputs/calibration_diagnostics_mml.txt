@@ -1,0 +1,46 @@
+========================================================================
+DSAN 6550 - Step 4b: Marginal MLE (Bock-Aitkin) Calibration
+========================================================================
+Sample size N = 500, items J = 30, quadrature K = 41
+Final marginal log-likelihood : -7241.78
+
+Item parameter recovery (calibrated vs true):
+  corr(a_hat, a_true)  = 0.9571    RMSE(a) = 0.1500
+  corr(b_hat, b_true)  = 0.9903    RMSE(b) = 0.1772
+
+Person ability recovery (EAP vs true theta):
+  corr(theta_hat, theta_true) = 0.9374    RMSE = 0.3683
+
+Calibrated item parameters (MML):
+ItemID Difficulty      a       b
+    Q1       Easy 1.6241 -2.1016
+    Q2       Easy 2.3459 -1.8487
+    Q3       Easy 1.5239 -2.0917
+    Q4       Easy 0.8204 -2.0124
+    Q5       Easy 1.1423 -1.5001
+    Q6       Easy 1.5275 -1.5037
+    Q7       Easy 1.7465 -1.1764
+    Q8       Easy 1.0855 -0.8153
+    Q9       Easy 1.9107 -0.8080
+   Q10       Easy 0.9640 -1.0086
+   Q11     Medium 1.7559 -0.3080
+   Q12     Medium 1.4125 -0.2538
+   Q13     Medium 1.5729 -0.2040
+   Q14     Medium 1.0170 -0.1634
+   Q15     Medium 1.0233 -0.0102
+   Q16     Medium 1.2007  0.0665
+   Q17     Medium 1.0932  0.3383
+   Q18     Medium 1.6780  0.2818
+   Q19     Medium 1.0026  0.3991
+   Q20     Medium 0.9347  0.4409
+   Q21       Hard 1.0401  0.6351
+   Q22       Hard 2.2117  0.8574
+   Q23       Hard 0.8873  1.2518
+   Q24       Hard 1.2697  1.1906
+   Q25       Hard 1.2774  1.1644
+   Q26       Hard 1.6959  1.4303
+   Q27       Hard 1.1610  1.5203
+   Q28       Hard 0.8397  1.5141
+   Q29       Hard 1.2093  1.9345
+   Q30       Hard 0.7584  2.7758
+========================================================================

@@ -1,0 +1,52 @@
+========================================================================
+DSAN 6550 - Step 4: 2PL Calibration Diagnostics
+========================================================================
+Method        : per-item logistic regression (sklearn)
+Sample        : N = 500, items J = 30
+Provisional theta proxy : z-scored total score (mean = 0, sd = 1 by construction)
+
+Item parameter recovery (calibrated vs simulated truth):
+  corr(a_hat, a_true)  = 0.9540    RMSE(a) = 0.2350
+  corr(b_hat, b_true)  = 0.9933    RMSE(b) = 0.1626
+
+Person ability recovery (z-scored total vs true theta):
+  corr(theta_proxy, theta_true) = 0.9325    RMSE = 0.3802
+
+Note: a small constant scale difference between estimated and true 'a'
+is expected because we use a sum-score proxy for theta rather than the
+true latent metric. The RANK ORDERING of items is what the CAT engine
+relies on, and that is preserved (corr ~ 0.95 for both a and b).
+
+Calibrated item parameters:
+ItemID Difficulty      a       b
+    Q1       Easy 1.8780 -1.9631
+    Q2       Easy 2.5668 -1.8025
+    Q3       Easy 1.6565 -2.0095
+    Q4       Easy 0.9569 -1.8010
+    Q5       Easy 1.2528 -1.4307
+    Q6       Easy 1.6504 -1.4669
+    Q7       Easy 1.8455 -1.1754
+    Q8       Easy 1.2248 -0.7692
+    Q9       Easy 1.9417 -0.8310
+   Q10       Easy 1.0812 -0.9449
+   Q11     Medium 1.8312 -0.3171
+   Q12     Medium 1.5120 -0.2552
+   Q13     Medium 1.6656 -0.2089
+   Q14     Medium 1.1331 -0.1588
+   Q15     Medium 1.1529 -0.0143
+   Q16     Medium 1.3167  0.0595
+   Q17     Medium 1.1777  0.3229
+   Q18     Medium 1.6987  0.2850
+   Q19     Medium 1.1470  0.3651
+   Q20     Medium 1.0644  0.4029
+   Q21       Hard 1.1553  0.5954
+   Q22       Hard 2.2133  0.8851
+   Q23       Hard 0.9865  1.1635
+   Q24       Hard 1.3871  1.1435
+   Q25       Hard 1.3845  1.1237
+   Q26       Hard 1.7902  1.4154
+   Q27       Hard 1.2951  1.4310
+   Q28       Hard 0.9695  1.3652
+   Q29       Hard 1.3090  1.8490
+   Q30       Hard 0.9270  2.3721
+========================================================================

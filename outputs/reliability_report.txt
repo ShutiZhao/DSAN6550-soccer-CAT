@@ -1,0 +1,49 @@
+========================================================================
+DSAN 6550 Final Project - Step 3: Reliability & Validity Report
+Topic: Soccer / FIFA World Cup CAT
+========================================================================
+
+Sample size            : N = 500 respondents
+Number of items        : J = 30
+Mean total score       : 15.26 / 30  (SD = 5.90)
+
+------------------------------------------------------------------------
+Reliability
+------------------------------------------------------------------------
+Cronbach's alpha (KR-20)              : alpha = 0.8676
+Split-half (odd vs even, raw)         : r     = 0.7627
+Spearman-Brown corrected split-half   : r_SB  = 0.8654
+
+Interpretation of alpha: good (>=0.80)
+
+------------------------------------------------------------------------
+Item-level validity (corrected item-total correlation, CITC)
+------------------------------------------------------------------------
+CITC mean = 0.393, min = 0.229, max = 0.548
+Items with CITC < 0.20 (low discrimination): 0
+Items with extreme p-value (<.10 or >.95)  : 0
+
+Per-difficulty summary:
+            p_value   CITC  D_index
+Difficulty                         
+Easy          0.812  0.363    0.340
+Hard          0.224  0.371    0.352
+Medium        0.490  0.446    0.536
+
+Validity by ability tertile (sanity check that p-correct is monotone in theta):
+  All 30 items monotone (p_low < p_mid < p_high)?  30 / 30
+  Mean discrimination index D = p_high - p_low  : 0.409
+
+------------------------------------------------------------------------
+Flags
+------------------------------------------------------------------------
+No items flagged. All 30 items pass CTT screening.
+
+------------------------------------------------------------------------
+Conclusion
+------------------------------------------------------------------------
+The 30-item soccer/World Cup pool shows good internal consistency
+(alpha = 0.868). The CITC distribution and the monotone p-correct gradient
+across theta tertiles support criterion validity: items rank-order respondents
+of different ability levels in the expected direction.
+========================================================================
