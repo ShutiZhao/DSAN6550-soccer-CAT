@@ -245,31 +245,32 @@ def submit_answer(letter, bank):
 # ---------------------------------------------------------------------------
 
 def page_intro():
-    st.title("Soccer / FIFA World Cup -- Computerized Adaptive Test")
+    st.title("Soccer / FIFA World Cup: Computerized Adaptive Test")
     st.markdown(
         """
-        **DSAN 6550, Spring 2026 -- Final Project**
-        *Role 2: Systems Lead (CAT engine + Streamlit dashboard).*
+        **DSAN 6550, Spring 2026. Final Project by Emily Zhao & Zhengyuan Wang.**
 
-        This dashboard demonstrates a **2PL Computerized Adaptive Test**
-        for soccer / FIFA World Cup knowledge. After every answer, the
-        system re-estimates the test-taker's ability theta_hat and selects
-        the next question to be the one whose **item information**
-        I_j(theta_hat) is highest at that ability -- i.e. the question
-        whose answer would tell us the most right now.
+        This dashboard demonstrates a 2PL Computerized Adaptive Test
+        for soccer and FIFA World Cup knowledge. After every answer,
+        the system re-estimates the test-taker's ability theta_hat and
+        picks the next question whose **item information**
+        I_j(theta_hat) is highest at that ability. In other words, it
+        chooses the question whose answer would tell us the most about
+        the test-taker right now.
 
         ### How this demo works
-        - The item bank has **30 calibrated items** (parameters a and b
-          estimated by Role 1 from 500 simulated respondents).
-        - The engine picks the next item by maximum information and
-          updates theta_hat by **Newton-Raphson MLE** after every answer.
-        - The test stops when SE(theta_hat) < 0.30 or after 20 items.
+        - The item bank holds **30 calibrated items**, with parameters
+          a and b estimated by Role 1 from 500 simulated respondents.
+        - The engine picks the next item by maximum information, then
+          updates theta_hat with Newton-Raphson MLE after each answer.
+        - The test stops when SE(theta_hat) drops below 0.30, or after
+          20 items.
 
         ### Two modes (sidebar)
-        - **Live mode** -- you answer each question yourself.
-        - **Demo mode** -- replay a pre-recorded simulated respondent
-          (low / medium / high ability) so the class can see the system
-          handle all three ability levels.
+        - **Live mode**: the user answers each question.
+        - **Demo mode**: replays a pre-recorded simulated respondent
+          (low, medium, or high ability) so the class can see the
+          system handle all three ability levels.
         """
     )
     st.divider()
@@ -277,8 +278,8 @@ def page_intro():
     bank = load_item_bank()
     c1, c2, c3 = st.columns(3)
     c1.metric("Items in bank", len(bank))
-    c2.metric("a range", f"{bank['a'].min():.2f} -- {bank['a'].max():.2f}")
-    c3.metric("b range", f"{bank['b'].min():.2f} -- {bank['b'].max():.2f}")
+    c2.metric("a range", f"{bank['a'].min():.2f} to {bank['a'].max():.2f}")
+    c3.metric("b range", f"{bank['b'].min():.2f} to {bank['b'].max():.2f}")
 
     st.divider()
     if st.button("Start Test", type="primary", use_container_width=True):
@@ -415,7 +416,7 @@ def page_test():
 # ---------------------------------------------------------------------------
 
 def page_results():
-    st.title("Test Complete -- Results")
+    st.title("Test Complete: Results")
 
     if not st.session_state.history:
         st.warning("No items were administered. Restart and try again.")
@@ -497,7 +498,7 @@ def sidebar():
         ["Live", "Demo"],
         index=0 if st.session_state.get("mode", "Live") == "Live" else 1,
         key="mode",
-        help="Live: you answer. Demo: replay a simulated respondent.",
+        help="Live: the user answers each question. Demo: replay a simulated respondent.",
     )
     if st.session_state.mode == "Demo":
         st.sidebar.selectbox(
@@ -525,7 +526,7 @@ def sidebar():
 # ---------------------------------------------------------------------------
 
 def main():
-    st.set_page_config(page_title="Soccer CAT -- DSAN 6550",
+    st.set_page_config(page_title="Soccer CAT: DSAN 6550",
                        page_icon="O", layout="wide")
     ensure_state()
     sidebar()
