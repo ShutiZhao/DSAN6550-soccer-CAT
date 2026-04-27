@@ -86,13 +86,11 @@ def ensure_state():
 
 
 def reset_for_new_test():
-    """Clear test state but remember the user's mode and demo choice."""
-    saved_mode = st.session_state.get("mode", "Live")
-    saved_demo = st.session_state.get("demo_choice",
-                                      list(DEMO_RESPONDENTS.keys())[1])
+    """Clear test state. Mode and demo_choice are owned by their sidebar
+    widgets, so we leave those keys alone -- Streamlit preserves them
+    automatically across reruns. (Writing to them here raises
+    StreamlitAPIException because the widgets have already been created.)"""
     init_state()
-    st.session_state.mode = saved_mode
-    st.session_state.demo_choice = saved_demo
 
 
 # ---------------------------------------------------------------------------
